@@ -17,7 +17,7 @@ from PyQt6.QtWidgets import (
     QLabel,
     QDialog)
 
-local_app_data = os.path.join(os.getenv("LocalAppData"), "AuraText")
+local_app_data = os.path.join(os.path.expanduser('~'), 'Library', 'Application Support', 'AuraText')
 
 class BoilerPlate(QDialog):
     def __init__(self, current_editor):

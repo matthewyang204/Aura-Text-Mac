@@ -29,7 +29,11 @@ class TerminalHistoryDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
 
-        self.local_app_data = os.path.join(os.getenv("LocalAppData"), "AuraText")
+        self.local_app_data = os.path.join(os.path.expanduser('~'), 'Library', 'Application Support', 'AuraText')
+with open(os.path.join(local_app_data, 'data', 'config.json'), 'r') as config_file:
+    _config = json.load(config_file)
+with open(os.path.join(local_app_data, 'data', 'theme.json'), 'r') as theme_file:
+    _theme = json.load(theme_file)
 
         self.setWindowTitle("Terminal History")
         self.setMinimumSize(400, 300)

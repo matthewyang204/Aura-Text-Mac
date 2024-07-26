@@ -14,11 +14,11 @@ This file includes the code to run the app. It also scans if the app is being op
 setup instructions.
 """
 
-local_app_data = os.path.join(os.getenv("LocalAppData"), "AuraText")
-with open(f"{local_app_data}/data/config.json", "r") as config_file:
+local_app_data = os.path.join(os.path.expanduser('~'), 'Library', 'Application Support', 'AuraText')
+with open(os.path.join(local_app_data, 'data', 'config.json'), 'r') as config_file:
     _config = json.load(config_file)
-with open(f"{local_app_data}/data/theme.json", "r") as config_file:
-    _theme = json.load(config_file)
+with open(os.path.join(local_app_data, 'data', 'theme.json'), 'r') as theme_file:
+    _theme = json.load(theme_file)
 
 
 def main():

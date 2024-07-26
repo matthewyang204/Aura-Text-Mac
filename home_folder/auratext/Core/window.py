@@ -41,7 +41,11 @@ from .AuraText import CodeEditor
 from .TabWidget import TabWidget
 from .plugin_interface import Plugin
 
-local_app_data = os.path.join(os.getenv("LocalAppData"), "AuraText")
+local_app_data = os.path.join(os.path.expanduser('~'), 'Library', 'Application Support', 'AuraText')
+with open(os.path.join(local_app_data, 'data', 'config.json'), 'r') as config_file:
+    _config = json.load(config_file)
+with open(os.path.join(local_app_data, 'data', 'theme.json'), 'r') as theme_file:
+    _theme = json.load(theme_file)
 
 path_project = open(f"{local_app_data}/data/CPath_Project.txt", "r+")
 cpath = path_project.read()
