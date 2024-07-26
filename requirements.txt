@@ -11,3 +11,6 @@ pyqt_find_replace_text_widget
 pywinstyles
 absresgetter
 roastedbyai
+qt_material
+pyqtdarktheme
+PyQt6-QScintilla
