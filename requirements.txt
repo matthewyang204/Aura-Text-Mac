@@ -14,3 +14,4 @@ roastedbyai
 qt_material
 pyqtdarktheme
 PyQt6-QScintilla
+pyqt6-tools
