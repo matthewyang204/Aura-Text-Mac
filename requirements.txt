@@ -1,6 +1,6 @@
-﻿art~=6.1
+art~=6.1
 pyjokes==0.6.0
-PyQt6~=6.5.3
+PyQt6==6.4.2
 pyttsx3==2.90
 requests==2.32.0
 GitPython==3.1.42
@@ -13,5 +13,5 @@ absresgetter
 roastedbyai
 qt_material
 pyqtdarktheme
-PyQt6-QScintilla
-pyqt6-tools
+PyQt6-QScintilla==2.12.0
+pyqt6-tools==6.4.2.3.3
