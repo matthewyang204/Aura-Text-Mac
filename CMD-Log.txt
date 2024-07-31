@@ -1,0 +1,149 @@
+
+C:\users\matthewyang>C:
+
+C:\users\matthewyang>cd C:\users\matthewyang
+
+C:\users\matthewyang>python auratext.py
+qt.qpa.windows: SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_
+AWARE_V2) failed: COM error 0x57  (Invalid parameter.)
+EnableNonClientDpiScaling() failed for HWND 0x40040 (120) (Call not implemented.
+)
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+['logs']
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+Unknown property align
+EnableNonClientDpiScaling() failed for HWND 0x40090 (120) (Call not implemented.
+)
+EnableNonClientDpiScaling() failed for HWND 0x50094 (120) (Call not implemented.
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
