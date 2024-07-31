@@ -30,28 +30,28 @@ class TerminalHistoryDialog(QDialog):
         super().__init__(parent)
 
         self.local_app_data = os.path.join(os.path.expanduser('~'), 'Library', 'Application Support', 'AuraText')
-with open(os.path.join(local_app_data, 'data', 'config.json'), 'r') as config_file:
-    _config = json.load(config_file)
-with open(os.path.join(local_app_data, 'data', 'theme.json'), 'r') as theme_file:
-    _theme = json.load(theme_file)
-
+        with open(os.path.join(self.local_app_data, 'data', 'config.json'), 'r') as config_file:
+            _config = json.load(config_file)
+        with open(os.path.join(self.local_app_data, 'data', 'theme.json'), 'r') as theme_file:
+            _theme = json.load(theme_file)
+        
         self.setWindowTitle("Terminal History")
         self.setMinimumSize(400, 300)
-
+        
         # Create a list view and set it as the main widget for the dialog
         self.list_view = QListView()
         self.list_model = QStandardItemModel()
         self.list_view.setModel(self.list_model)
-
+        
         layout = QVBoxLayout(self)
         layout.addWidget(self.list_view)
 
         close_button = QPushButton("Clear All")
         close_button.clicked.connect(self.clear_all)
         layout.addWidget(close_button)
-
+        
         self.fill_data()
-
+    
     def fill_data(self):
         with open(f'{self.local_app_data}/data/terminal_history.txt', 'r') as thistory_file:
             for line in thistory_file:
@@ -61,7 +61,6 @@ with open(os.path.join(local_app_data, 'data', 'theme.json'), 'r') as theme_file
     def clear_all(self):
         with open(f'{self.local_app_data}/data/terminal_history.txt', 'r+') as thistory_file:
             thistory_file.truncate(0)
-
 
 class AuraTextTerminalWidget(QWidget):
     def __init__(self, window: Window):

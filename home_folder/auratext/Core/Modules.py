@@ -8,6 +8,7 @@ import win32clipboard
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtWidgets import QLabel, QDockWidget, QVBoxLayout, QTextEdit
+import json
 
 api_key_pastebin = "_L_ZkBp7K3aZMY7z4ombPIztLxITOOpD"
 
